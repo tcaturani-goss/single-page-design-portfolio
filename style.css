@@ -1,0 +1,551 @@
+:root {
+    --clr-slate-blue: hsl(252, 66%, 62%);
+    --clr-sandy-brown: hsl(28, 89%, 67%);
+    --clr-pastel-pink: hsl(0, 76%, 79%);
+    --clr-terra-cotta: hsl(7, 77%, 66%);
+    --clr-medium-turquoise: hsl(172, 46%, 57%);
+    --clr-palatinate-purple: hsl(314, 45%, 23%);
+    --clr-sonic-silver: hsl(30, 5%, 45%);
+    --clr-seashell: hsl(28, 100%, 97%);
+    --clr-black: hsl(0, 0%, 1%);
+    --ff-clr-primary-500: hsl(30, 5%, 45%);
+    --ff-clr-primary-700: hsl(0, 0%, 1%);
+    --ff-clr-secondary-700: hsl(28, 100%, 97%);
+    --ff-primary: 'Plus Jakarta Sans', sans-serif;
+    --fs-500: 1rem; /* 16px */
+    --fs-700-sm: 0.875rem; /* 14px */
+    --fs-700-md: 1.5rem; /* 24px */
+    --fs-700-lg: 2.25rem; /* 36px */
+  }
+
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-seashell);
+  text-rendering: optimizeSpeed;
+}
+
+.main-container {
+  margin: 1rem 1rem;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consultation-button {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700-sm);
+  font-weight: 700;
+  color: var(--ff-clr-secondary-700);
+  background-color: var(--clr-black);
+  padding: 0.75rem 1.75rem;
+  border-radius: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+.consultation-button:hover {
+  background-color: hsl(252, 66%, 62%);
+}
+.consultation-button-body-one:hover {
+  background-color: hsl(28, 89%, 67%);
+}
+.consultation-button-body-two:hover {
+  background-color: hsl(28, 89%, 67%);
+}
+.consultation-button-body-one {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700-sm);
+  font-weight: 700;
+  color: var(--ff-clr-secondary-700);
+  background-color: var(--clr-terra-cotta);
+  padding: 0.75rem 1rem;
+  margin: 0rem 5.25rem;
+  border-radius: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+.consultation-button-body-two {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700-sm);
+  font-weight: 700;
+  color: var(--ff-clr-secondary-700);
+  background-color: var(--clr-terra-cotta);
+  padding: 0.75rem 1rem;
+  margin: 0rem 5.25rem;
+  border-radius: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+.consultation-button-body:hover {
+  background-color: hsl(28, 89%, 67%);
+}
+.design-solutions-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.125rem;
+  margin: 2rem 0rem;
+}
+h1 {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700-lg);
+  font-weight: 800;
+  color: var(--clr-black);
+  line-height: 2.8125rem;
+}
+h2 {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700-md);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.875rem;
+}
+.design-paragraph {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-500);
+  font-weight: 500;
+  color: var(--ff-clr-primary-500);
+  line-height: 1.625rem;
+  padding: 0rem 2rem;
+}
+ 
+/* Grid Tiles Begin*/
+.graphic-design-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-slate-blue);
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem;
+}
+.graphic-pattern {
+  align-self: flex-end;
+  width: 8rem;
+  height: 12rem;
+}
+.graphic-title {
+  margin-top: 6rem;
+}
+.sm-block-title {
+  margin-top: 2.25rem;
+}
+.illustrations-title {
+  margin-top: 1rem;
+}
+.lg-block-title {
+  margin-top: 2.25rem;
+}
+
+
+.ux-ui-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-sandy-brown);
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem;
+}
+.ux-pattern {
+  align-self: flex-end;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+.apps-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-pastel-pink);
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem;
+}
+.apps-pattern {
+  align-self: flex-end;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+.illustrations-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-terra-cotta);
+  border-radius: 8px;
+  padding: 1.5625rem 1.5rem;
+}
+.illustrations-pattern {
+  align-self: flex-end;
+  width: 8rem;
+  height: 4rem;
+}
+
+
+
+.photography-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-medium-turquoise);
+  border-radius: 8px;
+  padding: 1.5625rem 1.5rem;
+}
+.photography-pattern {
+  align-self: flex-end;
+  width: 10rem;
+  height: 4rem;
+}
+
+
+.motion-graphics-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-palatinate-purple);
+  border-radius: 8px;
+  padding: 1.5625rem 1.5rem;
+}
+.motion-pattern {
+  align-self: flex-end;
+  width: 8rem;
+  height: 4rem;
+}
+/* Grid Tiles End*/
+
+/* Mobile Grid Layout Begins */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    grid-template-areas:
+      "graphic-design graphic-design"
+      "ux-ui apps"
+      "illustrations illustrations"
+      "photography photography"
+      "motion motion";
+    align-items: start;
+  }
+  
+  .graphic-design-container {
+    grid-area: graphic-design;
+  }
+  .ux-ui-container {
+    grid-area: ux-ui;
+  }
+  .apps-container {
+    grid-area: apps;
+  }
+  .illustrations-container {
+    grid-area: illustrations;
+  }
+  .photography-container {
+    grid-area: photography;
+  }
+  .motion-graphics-container {
+    grid-area: motion;
+  }
+  /* Mobile Grid Layout Ends */
+
+  .amy-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem 0rem;
+  }
+  .amy-img {
+    width:  18.75rem;
+    height: 18.75rem;
+  }
+  .amy-container-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  h3 {
+    font-family: var(--ff-primary);
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: var(--clr-black);
+    line-height: 2.0625rem;
+  }
+  .amy-paragraph {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-500);
+    font-weight: 500;
+    color: var(--ff-clr-primary-500);
+    line-height: 1.625rem;
+  }
+  .mywork-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-700-md);
+    font-weight: 700;
+    color: var(--clr-black);
+    line-height: 2.8125rem;
+  }
+
+  .swiper-wrapper{
+      display: flex;
+      gap: 1rem;
+  }
+  .slide-img {
+      border-radius: 10px;
+      margin: 3rem 0rem;
+      width: 16.875rem;
+      height: 11.25rem;
+  }
+  .arrows-container {
+    display: flex;
+    gap: 1.125rem;
+    justify-content: center;
+  }
+  .left-arrow {
+    background-color: var(--clr-black);
+    border-radius: 50%;
+    padding: 1.5rem 1.5rem;
+    cursor: pointer; 
+  }
+  .right-arrow {
+    background-color: var(--clr-black);
+    border-radius: 50%;
+    padding: 1.5rem 1.5rem;
+    cursor: pointer;
+  }
+  .bookme-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: var(--clr-black);
+    padding: 2.5rem 0rem;
+    border-radius: 10px;
+    margin: 2rem 0rem;
+  }
+  h5 {
+    font-family: var(--ff-primary);
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: var(--clr-seashell);
+    line-height: 2.0625rem;
+    margin: 0rem;
+  }
+  .bookme-paragraph {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-500);
+    font-weight: 500;
+    color: var(--clr-seashell);
+    line-height: 1.625rem;
+    padding: 0rem 1.375rem
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+
+
+/* Tablet Layout Begins */
+  @media only screen and (min-width: 43.75rem) {
+  .main-container {
+    margin: 1rem 2rem;
+  }
+  .design-solutions-container {
+    margin: 4rem 0rem;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  .design-paragraph {
+    font-size: 1.125rem;
+  }
+    /* Tablet Grid Layout Begins */
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "graphic-design graphic-design ux-ui apps"
+    "graphic-design graphic-design illustrations illustrations"
+    "photography photography motion motion";
+  }
+  /* Tablet Grid Layout Ends */
+
+  .lg-block-title {
+    margin-top: 2.25rem;
+  }
+  .amy-intro-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .graphic-title {
+    margin-top: 6rem;
+  }
+  .amy-img {
+    position: relative;
+    right: 4.25rem;
+  }
+  .amy-container-text {
+    display: flex;
+    text-align: start;
+    gap: 1.5rem;
+    margin-top: 0rem;
+  }
+  h3 {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  .amy-paragraph {
+    font-size: 1.125rem;
+  }
+  .consultation-button-body-one {
+    padding: 0.75rem 1rem;
+    
+  }
+  .consultation-button-body-two {
+    padding: 0.75rem 1rem;
+    
+  }
+  .bookme-container {
+    padding: 4rem 0rem;
+    border-radius: 10px;
+    margin: 3rem 2rem;
+  }
+  .bookme-paragraph {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+  }
+  .footer-container {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+/* Tablet Layout Ends */
+
+/* Desktop Layout Begins */
+  @media only screen and (min-width: 90rem) {
+    .main-container {
+      overflow: hidden;
+    }
+    .motion-graphics-container h2 {
+        margin-top: 1rem;
+      }
+    .swiper-wrapper {
+      overflow: hidden;
+      width: 75%;
+    }
+    .img-slider-container {
+      overflow: hidden;
+    }
+    /*
+    .img-slider-container {
+      position: relative;
+      width: 700px;
+      height: 300px;
+      
+    }
+    .swiper-wrapper{
+        display: flex;
+        gap: 1rem;
+    }
+    .slide-img {
+        border-radius: 10px;
+        margin: 3rem 0rem;
+    }
+   /* Desktop Grid Layout Begins */
+   .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0rem 10rem;
+    grid-template-areas:
+    "graphic-design graphic-design ux-ui apps photography photography"
+    "graphic-design graphic-design illustrations illustrations motion motion";
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .design-paragraph {
+    font-size: 1.125rem;
+    padding: 0rem 21rem;
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    padding-right: 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 2.5rem;
+  }
+  .amy-intro-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 8rem;
+    margin: 2.5rem 10rem;
+  }
+  .amy-img {
+    position: static;
+  }
+  .amy-paragraph {
+    font-size: 1.125rem;
+  }
+  .consultation-button-body-two {
+    position: relative;
+    align-self: flex-end;
+    bottom: 7rem;
+    right: 0rem;
+    padding: 1rem 3rem;
+  }
+  .bookme-container {
+    align-items: flex-start;
+    padding: 4rem 0rem;
+    border-radius: 10px;
+    margin: 10rem 2rem 3rem 2rem;
+  }
+  h5 {
+    padding: 2rem 1rem 0rem 4rem;
+  }
+  .bookme-paragraph {
+    text-align: start;
+    font-size: 1.125rem;
+    padding: 2rem 44rem 0rem 4rem;
+  }
+  /* Desktop Grid Layout Ends */
+}
+/* Desktop Layout Ends */

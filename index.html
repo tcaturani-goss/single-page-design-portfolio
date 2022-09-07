@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="header-container">
+        <img src="logo.svg" alt="porfolio logo" class="logo" />
+        <a class="consultation-button">Free Consultation</a>
+      </header>
+      <div class="design-solutions-container">
+        <h1>Design solutions made easy</h1>
+        <p class="design-paragraph">
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+      </div>
+      <div class="grid-container">
+        <div class="graphic-design-container">
+          <img
+            src="pattern-graphic-design.svg"
+            alt="graphic design pattern"
+            class="graphic-pattern"
+          />
+          <h2 class="graphic-title">Graphic Design</h2>
+        </div>
+        <div class="ux-ui-container">
+          <img src="pattern-ui-ux.svg" alt="ux ui pattern" class="ux-pattern" />
+          <h2 class="sm-block-title">UI/UX</h2>
+        </div>
+        <div class="apps-container">
+          <img src="pattern-apps.svg" alt="apps pattern" class="apps-pattern" />
+          <h2 class="sm-block-title">Apps</h2>
+        </div>
+        <div class="illustrations-container">
+          <img
+            src="pattern-illustrations.svg"
+            alt="illustrations pattern"
+            class="illustrations-pattern"
+          />
+          <h2 class="illustrations-title">Illustrations</h2>
+        </div>
+        <div class="photography-container">
+          <img
+            src="pattern-photography.svg"
+            alt="photography pattern"
+            class="photography-pattern"
+          />
+          <h2 class="lg-block-title">Photography</h2>
+        </div>
+        <div class="motion-graphics-container">
+          <img
+            src="pattern-motion-graphics.svg"
+            alt="motion graphics pattern"
+            class="motion-pattern"
+          />
+          <h2 class="lg-block-title">Motion Graphics</h2>
+        </div>
+      </div>
+      <div class="amy-intro-container">
+        <img src="image-amy.webp" alt="picture of amy" class="amy-img" />
+        <div class="amy-container-text">
+          <h3>I’m Amy, and I’d love to work on your next project</h3>
+          <p class="amy-paragraph">
+           I love working with others to create beautiful design solutions. I’ve
+           designed everything from brand illustrations to complete mobile apps.
+           I’m also handy with a camera!</p>
+          <a class="consultation-button-body-one">Free Consultation</a>
+        </div>
+        </p>
+      </div>
+      <div class="mywork-container">
+        <h4>My Work</h4>
+  
+        <div class="img-slider-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="image-slide-1.jpg" alt="slide one" id="image1" class="slide-img" /></div>
+            <div class="swiper-slide"><img src="image-slide-2.jpg" alt="slide one" id="image1" class="slide-img" /></div>
+            <div class="swiper-slide"><img src="image-slide-3.jpg" alt="slide one" id="image1" class="slide-img" /></div>
+            <div class="swiper-slide"><img src="image-slide-4.jpg" alt="slide one" id="image1" class="slide-img" /></div>
+            <div class="swiper-slide"><img src="image-slide-5.jpg" alt="slide one" id="image1" class="slide-img" /></div>
+          </div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="arrows-container">
+            <img src="icon-arrow-left.svg" alt="left arrow" class="left-arrow" onclick="prev()"/>
+            <img
+              src="icon-arrow-right.svg"
+              alt="right arrow"
+              class="right-arrow"
+              onclick="next()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bookme-container">
+        <h5>Book a call with me</h5>
+        <p class="bookme-paragraph">
+          I’d love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+        <a class="consultation-button-body-two">Free Consultation</a>
+      </div>
+      <footer class="footer-container">
+        <img src="logo.svg" alt="porfolio logo" class="logo" />
+        <a class="consultation-button">Free Consultation</a>
+      </footer>
+    </main>
+    
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script>
+    let index = 0;
+    let currentSrc = "";
+    const images = [
+     "image-slide-2.jpg",
+     "image-slide-3.jpg",
+     "image-slide-4.jpg",
+     "image-slide-5.jpg"
+    ];
+
+    function next() {
+      index = index === 2 ? index : index + 1;
+      currentSrc = images[index];
+      changeImage();
+    }
+    
+    function prev() {
+      index = index === 0 ? index : index - 1;
+      currentSrc = images[index];
+      changeImage();
+    }
+
+    function changeImage() {
+      const image = document.getElementsByClassName("slide-img")[0];
+      image.src = currentSrc;
+    }
+     /* const swiper = new Swiper('.img-slider-container', {
+ 
+     loop: true,
+    
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+     navigation: {
+       nextEl: '.right-arrow',
+       prevEl: '.left-arrow',
+     }, 
+      }); */
+       </script>
+     </body>
+   </html>
